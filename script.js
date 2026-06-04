@@ -265,6 +265,30 @@ function initCardTilt() {
     });
 }
 
+// --- Certificate Modal ---
+function openCertModal(imgSrc, title) {
+    const modal = document.getElementById('certModal');
+    const modalImg = document.getElementById('certModalImg');
+    const modalTitle = document.getElementById('certModalTitle');
+
+    modalTitle.textContent = title;
+    modalImg.src = imgSrc;
+    modalImg.alt = title;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+    const modal = document.getElementById('certModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeCertModal();
+});
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
     // Typing effect
