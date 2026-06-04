@@ -757,6 +757,18 @@ img {
     color: var(--accent-primary);
 }
 
+a.cert-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a.cert-link:hover {
+    border-color: var(--accent-primary);
+    background: rgba(108, 92, 231, 0.08);
+    box-shadow: 0 4px 16px var(--accent-glow);
+}
+
 /* --- Skills Section --- */
 .skills-grid {
     display: grid;

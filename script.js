@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Admin Planner',
             'Digital Entrepreneur',
             'Blockchain Researcher',
-            'TOKOCIEL Owner'
+            'Kelontong Ciel Owner'
         ], 2000);
     }
 
