@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochaos | Web3 & AI Enthusiast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">{</span>ochaos<span class="logo-bracket">}</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="title-name">Ochaos</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typed-text"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Exploring the intersection of <span class="highlight">Web3</span> and 
+                <span class="highlight">Artificial Intelligence</span> to build the decentralized future.
+                Passionate about blockchain, smart contracts, and machine learning.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span>+
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>+
+                    <span class="stat-label">Years Exp</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>+
+                    <span class="stat-label">Certifications</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="code-title">portfolio.sol</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">pragma</span> solidity ^0.8.19;
+
+<span class="code-keyword">contract</span> <span class="code-class">Portfolio</span> {
+    <span class="code-keyword">string</span> <span class="code-keyword">public</span> name = <span class="code-string">"Ochaos"</span>;
+    <span class="code-keyword">string</span> <span class="code-keyword">public</span> role = <span class="code-string">"Web3 & AI Dev"</span>;
+    
+    <span class="code-keyword">function</span> <span class="code-func">getSkills</span>() 
+        <span class="code-keyword">public pure returns</span> (<span class="code-keyword">string[] memory</span>) {
+        <span class="code-comment">// Solidity, Python, JS, Rust</span>
+        <span class="code-keyword">return</span> skills;
+    }
+}</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer and researcher focused on the convergence of 
+                        <strong>Web3 technologies</strong> and <strong>Artificial Intelligence</strong>. 
+                        With a deep understanding of blockchain architecture, smart contract development, 
+                        and machine learning, I build solutions that push the boundaries of decentralized systems.
+                    </p>
+                    <p>
+                        My journey started with traditional web development, but I quickly became fascinated 
+                        by the possibilities of decentralization and autonomous systems. Today, I work on 
+                        DeFi protocols, AI-powered dApps, and contribute to open-source projects that 
+                        shape the future of the internet.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Web3 Native</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI/ML Practitioner</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Dev</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Smart Contract Auditor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-avatar">
+                                <div class="avatar-ring"></div>
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <h3>Ochaos</h3>
+                            <p class="card-role">Web3 & AI Developer</p>
+                            <div class="card-socials">
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / CV Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>Web3 Developer & AI Researcher</h3>
+                        <p class="timeline-company">Freelance / Open Source</p>
+                        <ul>
+                            <li>Building DeFi protocols and smart contracts on EVM-compatible chains</li>
+                            <li>Developing AI-powered tools for blockchain analytics</li>
+                            <li>Contributing to open-source Web3 infrastructure projects</li>
+                            <li>Smart contract auditing and security research</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2023</span>
+                        <h3>Blockchain Developer</h3>
+                        <p class="timeline-company">DeFi Startup</p>
+                        <ul>
+                            <li>Developed and deployed smart contracts handling $2M+ TVL</li>
+                            <li>Built frontend interfaces using React & ethers.js</li>
+                            <li>Implemented automated testing with Hardhat & Foundry</li>
+                            <li>Integrated AI models for predictive market analysis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2022</span>
+                        <h3>Full-Stack Developer</h3>
+                        <p class="timeline-company">Tech Company</p>
+                        <ul>
+                            <li>Built scalable web applications with React, Node.js, and Python</li>
+                            <li>Implemented ML models for data-driven features</li>
+                            <li>Managed CI/CD pipelines and cloud infrastructure</li>
+                            <li>Led migration of legacy systems to modern architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2022</span>
+                        <h3>Computer Science / Information Technology</h3>
+                        <p class="timeline-company">University</p>
+                        <ul>
+                            <li>Focus on Distributed Systems & Artificial Intelligence</li>
+                            <li>Research on Blockchain Consensus Mechanisms</li>
+                            <li>Published papers on AI-driven smart contract optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="certifications">
+                <h3 class="cert-title">Certifications & Achievements</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fab fa-ethereum"></i>
+                        <span>Certified Ethereum Developer</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-robot"></i>
+                        <span>TensorFlow Developer Certificate</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>AWS Solutions Architect</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Smart Contract Security Auditor</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Multiple Hackathon Winner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-cube"></i> Web3 / Blockchain</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Hardhat</span>
+                        <span class="skill-tag">Foundry</span>
+                        <span class="skill-tag">Ethers.js</span>
+                        <span class="skill-tag">Web3.js</span>
+                        <span class="skill-tag">IPFS</span>
+                        <span class="skill-tag">The Graph</span>
+                        <span class="skill-tag">Chainlink</span>
+                        <span class="skill-tag">OpenZeppelin</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI / Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">JavaScript/TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>AI</span>
+                            <span>Web3</span>
+                            <span>DeFi</span>
+                        </div>
+                        <h3>AI-Powered DeFi Aggregator</h3>
+                        <p>An intelligent DeFi protocol that uses machine learning to optimize yield farming strategies across multiple chains. Features predictive analytics and automated portfolio rebalancing.</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>NFT</span>
+                            <span>AI</span>
+                            <span>Generative</span>
+                        </div>
+                        <h3>Generative AI NFT Collection</h3>
+                        <p>A dynamic NFT collection where each token's metadata and visual attributes evolve using on-chain AI models. Built with custom ERC-721 extensions.</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>DALL-E API</span>
+                            <span>IPFS</span>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Security</span>
+                            <span>AI</span>
+                            <span>Auditing</span>
+                        </div>
+                        <h3>Smart Contract Vulnerability Scanner</h3>
+                        <p>An AI-powered tool that automatically detects vulnerabilities in Solidity smart contracts using pattern recognition and symbolic execution.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Slither</span>
+                            <span>GPT-4</span>
+                            <span>AST Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-vote-yea"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>DAO</span>
+                            <span>Governance</span>
+                            <span>Web3</span>
+                        </div>
+                        <h3>Decentralized Governance Platform</h3>
+                        <p>A full-featured DAO governance system with quadratic voting, delegation, and AI-summarized proposals for better community decision-making.</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>The Graph</span>
+                            <span>React</span>
+                            <span>LangChain</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Interested in collaborating on Web3 or AI projects? 
+                        Whether it's building the next DeFi protocol, training ML models, 
+                        or just geeking out about decentralized systems - let's talk!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:ochaos@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>ochaos@example.com</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/ochaosamaaz</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>@ochaos_dev</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-discord"></i>
+                            <span>ochaos#0001</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>@ochaos</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Ochaos. Built with passion for Web3 & AI.</p>
+                <p class="footer-tagline">Decentralizing the future, one smart contract at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
