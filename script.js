@@ -271,12 +271,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedElement = document.querySelector('.typed-text');
     if (typedElement) {
         new TypeWriter(typedElement, [
-            'Web3 Developer',
-            'AI/ML Enthusiast',
-            'Smart Contract Auditor',
-            'Full-Stack Engineer',
+            'Web3 Enthusiast',
+            'AI Explorer',
+            'Admin Planner',
+            'Digital Entrepreneur',
             'Blockchain Researcher',
-            'Open Source Contributor'
+            'TOKOCIEL Owner'
         ], 2000);
     }
 
