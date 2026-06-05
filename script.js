@@ -299,6 +299,19 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeCertModal();
 });
 
+// --- Scroll Progress Bar ---
+function initScrollProgress() {
+    const progressBar = document.getElementById('scrollProgress');
+    if (!progressBar) return;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        progressBar.style.width = scrollPercent + '%';
+    });
+}
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
     // Typing effect
@@ -324,6 +337,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNav();
     initSkillHover();
     initCardTilt();
+    initScrollProgress();
 
     // Remove preload class after page loads
     document.body.classList.add('loaded');
