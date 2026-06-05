@@ -106,6 +106,14 @@ function animateCounters() {
 function initScrollReveal() {
     const sections = document.querySelectorAll('.section');
 
+    // Immediately show sections that are already in viewport
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            section.classList.add('visible');
+        }
+    });
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -122,7 +130,9 @@ function initScrollReveal() {
     }, observerOptions);
 
     sections.forEach(section => {
-        observer.observe(section);
+        if (!section.classList.contains('visible')) {
+            observer.observe(section);
+        }
     });
 }
 
@@ -321,5 +331,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // --- Page Load Animation ---
 window.addEventListener('load', () => {
-    document.body.style.opacity = '1';
+    document.body.classList.add('loaded');
 });

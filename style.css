@@ -51,6 +51,7 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    opacity: 1;
 }
 
 ::selection {
@@ -1150,6 +1151,21 @@ a.cert-link:hover,
 .section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Fallback: if JS doesn't load, show everything */
+noscript ~ .section,
+body.loaded .section {
+    /* JS will handle visibility */
+}
+
+/* Safety: auto-show after 3 seconds even without JS */
+@keyframes forceShow {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    animation: forceShow 0s 2s forwards;
 }
 
 /* --- Responsive Design --- */
