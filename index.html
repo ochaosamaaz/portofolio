@@ -3,7 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ochaos | Web3 & AI Enthusiast</title>
+    <meta name="description" content="Ossama Bintang - AI Enthusiast & Full-Stack Developer. Building intelligent financial tools and AI-powered agents. Based in Indonesia.">
+    <meta name="keywords" content="Ossama Bintang, Ciel, AI Developer, Full-Stack Developer, Financial Tools, Trading Agent, Indonesia">
+    <meta name="author" content="Ossama Bintang">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Ossama Bintang | AI Enthusiast & Developer">
+    <meta property="og:description" content="Building intelligent financial tools and AI-powered agents for the future.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ciel.biz.id">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ossama Bintang | AI Enthusiast & Developer">
+    <meta name="twitter:description" content="Building intelligent financial tools and AI-powered agents for the future.">
+
+    <title>Ciel | AI Enthusiast & Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -19,7 +34,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-bracket">{</span>ochaos<span class="logo-bracket">}</span>
+                <span class="logo-bracket">{</span>ciel<span class="logo-bracket">}</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -28,6 +43,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#contact" class="nav-cta btn btn-primary btn-sm">Hire Me</a>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -45,15 +61,15 @@
             </div>
             <h1 class="hero-title">
                 <span class="title-line">Hi, I'm</span>
-                <span class="title-name">Ochaos</span>
+                <span class="title-name">Ossama Bintang</span>
             </h1>
             <p class="hero-subtitle">
                 <span class="typed-text"></span><span class="cursor">|</span>
             </p>
             <p class="hero-description">
-                Exploring the intersection of <span class="highlight">Web3</span> and 
-                <span class="highlight">Artificial Intelligence</span> to build the decentralized future.
-                Passionate about blockchain, smart contracts, and machine learning.
+                Passionate about building <span class="highlight">AI-powered tools</span> and 
+                <span class="highlight">intelligent systems</span> that solve real-world problems.
+                From financial analytics to autonomous trading agents, I craft solutions at the intersection of AI and technology.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
@@ -66,16 +82,16 @@
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number" data-target="15">0</span>+
+                    <span class="stat-number" data-target="8">0</span>+
                     <span class="stat-label">Projects</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number" data-target="3">0</span>+
-                    <span class="stat-label">Years Exp</span>
+                    <span class="stat-number" data-target="2">0</span>+
+                    <span class="stat-label">Years Learning</span>
                 </div>
                 <div class="stat">
                     <span class="stat-number" data-target="5">0</span>+
-                    <span class="stat-label">Certifications</span>
+                    <span class="stat-label">Tech Stacks</span>
                 </div>
             </div>
         </div>
@@ -85,20 +101,20 @@
                     <div class="code-dots">
                         <span></span><span></span><span></span>
                     </div>
-                    <span class="code-title">portfolio.sol</span>
+                    <span class="code-title">ciel_agent.py</span>
                 </div>
-                <pre class="code-body"><code><span class="code-keyword">pragma</span> solidity ^0.8.19;
+                <pre class="code-body"><code><span class="code-keyword">from</span> langchain <span class="code-keyword">import</span> Agent
+<span class="code-keyword">from</span> groq <span class="code-keyword">import</span> Groq
 
-<span class="code-keyword">contract</span> <span class="code-class">Portfolio</span> {
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> name = <span class="code-string">"Ochaos"</span>;
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> role = <span class="code-string">"Web3 & AI Dev"</span>;
+<span class="code-keyword">class</span> <span class="code-class">CielAgent</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Ossama Bintang"</span>
+        self.role = <span class="code-string">"AI Enthusiast"</span>
+        self.stack = [<span class="code-string">"Python"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"AI/ML"</span>]
     
-    <span class="code-keyword">function</span> <span class="code-func">getSkills</span>() 
-        <span class="code-keyword">public pure returns</span> (<span class="code-keyword">string[] memory</span>) {
-        <span class="code-comment">// Solidity, Python, JS, Rust</span>
-        <span class="code-keyword">return</span> skills;
-    }
-}</code></pre>
+    <span class="code-keyword">def</span> <span class="code-func">build</span>(self, idea):
+        <span class="code-comment"># Turn ideas into reality</span>
+        <span class="code-keyword">return</span> Agent.create(idea)</code></pre>
             </div>
         </div>
     </section>
@@ -113,33 +129,33 @@
             <div class="about-grid">
                 <div class="about-text">
                     <p>
-                        I'm a passionate developer and researcher focused on the convergence of 
-                        <strong>Web3 technologies</strong> and <strong>Artificial Intelligence</strong>. 
-                        With a deep understanding of blockchain architecture, smart contract development, 
-                        and machine learning, I build solutions that push the boundaries of decentralized systems.
+                        I'm <strong>Ossama Bintang Raemi Putra</strong>, a self-driven developer and 
+                        <strong>AI enthusiast</strong> based in Indonesia. I'm passionate about leveraging 
+                        artificial intelligence to build practical tools that make a real difference - 
+                        from financial tracking applications to autonomous trading agents.
                     </p>
                     <p>
-                        My journey started with traditional web development, but I quickly became fascinated 
-                        by the possibilities of decentralization and autonomous systems. Today, I work on 
-                        DeFi protocols, AI-powered dApps, and contribute to open-source projects that 
-                        shape the future of the internet.
+                        My journey started with curiosity about how technology can automate and optimize 
+                        everyday tasks. Today, I focus on building AI-powered bots, financial tools, 
+                        and full-stack web applications. I believe in learning by building, and every 
+                        project I create is a step toward mastering the craft of intelligent software development.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <i class="fas fa-cube"></i>
-                            <span>Web3 Native</span>
+                            <i class="fas fa-brain"></i>
+                            <span>AI Enthusiast</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <span>AI/ML Practitioner</span>
+                            <i class="fas fa-chart-line"></i>
+                            <span>FinTech Builder</span>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-code"></i>
                             <span>Full-Stack Dev</span>
                         </div>
                         <div class="highlight-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>Smart Contract Auditor</span>
+                            <i class="fas fa-robot"></i>
+                            <span>Bot Developer</span>
                         </div>
                     </div>
                 </div>
@@ -150,13 +166,13 @@
                                 <div class="avatar-ring"></div>
                                 <i class="fas fa-user-astronaut"></i>
                             </div>
-                            <h3>Ochaos</h3>
-                            <p class="card-role">Web3 & AI Developer</p>
+                            <h3>Ossama Bintang</h3>
+                            <p class="card-role">AI Enthusiast & Developer</p>
                             <div class="card-socials">
-                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                                <a href="https://github.com/ochaosamaaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.instagram.com/0xc1el" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://t.me/c1elxyz" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -170,87 +186,74 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">&lt;experience&gt;</span>
-                <h2 class="section-title">Experience & Education</h2>
+                <h2 class="section-title">Experience & Journey</h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2023 - Present</span>
-                        <h3>Web3 Developer & AI Researcher</h3>
-                        <p class="timeline-company">Freelance / Open Source</p>
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>AI Developer & FinTech Builder</h3>
+                        <p class="timeline-company">Freelance / Self-Directed Projects</p>
                         <ul>
-                            <li>Building DeFi protocols and smart contracts on EVM-compatible chains</li>
-                            <li>Developing AI-powered tools for blockchain analytics</li>
-                            <li>Contributing to open-source Web3 infrastructure projects</li>
-                            <li>Smart contract auditing and security research</li>
+                            <li>Building AI-powered trading agents using Python, Groq & LangChain</li>
+                            <li>Developing CielFinance Tools - a comprehensive financial tracking platform</li>
+                            <li>Creating autonomous bots for Discord, Telegram, and market analysis</li>
+                            <li>Exploring quantum computing concepts for financial applications</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2022 - 2023</span>
-                        <h3>Blockchain Developer</h3>
-                        <p class="timeline-company">DeFi Startup</p>
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>Full-Stack Developer & Bot Creator</h3>
+                        <p class="timeline-company">Self-Learning & Open Source</p>
                         <ul>
-                            <li>Developed and deployed smart contracts handling $2M+ TVL</li>
-                            <li>Built frontend interfaces using React & ethers.js</li>
-                            <li>Implemented automated testing with Hardhat & Foundry</li>
-                            <li>Integrated AI models for predictive market analysis</li>
+                            <li>Built full-stack web applications with JavaScript, Node.js & modern frameworks</li>
+                            <li>Developed Discord bots with advanced features and integrations</li>
+                            <li>Learned Python for AI/ML and automation scripting</li>
+                            <li>Created Roblox game scripts and tools using Lua</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2021 - 2022</span>
-                        <h3>Full-Stack Developer</h3>
-                        <p class="timeline-company">Tech Company</p>
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>Web Developer & Tech Explorer</h3>
+                        <p class="timeline-company">Self-Taught Journey</p>
                         <ul>
-                            <li>Built scalable web applications with React, Node.js, and Python</li>
-                            <li>Implemented ML models for data-driven features</li>
-                            <li>Managed CI/CD pipelines and cloud infrastructure</li>
-                            <li>Led migration of legacy systems to modern architecture</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2018 - 2022</span>
-                        <h3>Computer Science / Information Technology</h3>
-                        <p class="timeline-company">University</p>
-                        <ul>
-                            <li>Focus on Distributed Systems & Artificial Intelligence</li>
-                            <li>Research on Blockchain Consensus Mechanisms</li>
-                            <li>Published papers on AI-driven smart contract optimization</li>
+                            <li>Started learning HTML, CSS, and JavaScript fundamentals</li>
+                            <li>Built first portfolio websites and landing pages</li>
+                            <li>Explored various technologies including TypeScript and APIs</li>
+                            <li>Joined developer communities and started contributing to projects</li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="certifications">
-                <h3 class="cert-title">Certifications & Achievements</h3>
+                <h3 class="cert-title">Focus Areas & Interests</h3>
                 <div class="cert-grid">
                     <div class="cert-item">
-                        <i class="fab fa-ethereum"></i>
-                        <span>Certified Ethereum Developer</span>
-                    </div>
-                    <div class="cert-item">
                         <i class="fas fa-robot"></i>
-                        <span>TensorFlow Developer Certificate</span>
+                        <span>AI & Machine Learning</span>
                     </div>
                     <div class="cert-item">
-                        <i class="fas fa-cloud"></i>
-                        <span>AWS Solutions Architect</span>
+                        <i class="fas fa-chart-line"></i>
+                        <span>Financial Technology</span>
                     </div>
                     <div class="cert-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Smart Contract Security Auditor</span>
+                        <i class="fas fa-bolt"></i>
+                        <span>Trading Automation</span>
                     </div>
                     <div class="cert-item">
-                        <i class="fas fa-trophy"></i>
-                        <span>Multiple Hackathon Winner</span>
+                        <i class="fas fa-atom"></i>
+                        <span>Quantum Computing</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Open Source Contributor</span>
                     </div>
                 </div>
             </div>
@@ -266,47 +269,42 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-cube"></i> Web3 / Blockchain</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Solidity</span>
-                        <span class="skill-tag">Rust</span>
-                        <span class="skill-tag">Hardhat</span>
-                        <span class="skill-tag">Foundry</span>
-                        <span class="skill-tag">Ethers.js</span>
-                        <span class="skill-tag">Web3.js</span>
-                        <span class="skill-tag">IPFS</span>
-                        <span class="skill-tag">The Graph</span>
-                        <span class="skill-tag">Chainlink</span>
-                        <span class="skill-tag">OpenZeppelin</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> AI / Machine Learning</h3>
+                    <h3><i class="fas fa-brain"></i> AI & Automation</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Scikit-learn</span>
                         <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Groq API</span>
                         <span class="skill-tag">OpenAI API</span>
-                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">Bot Development</span>
                         <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Data Analysis</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">JavaScript/TypeScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">GraphQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Discord.js</span>
+                        <span class="skill-tag">Telegram Bot API</span>
+                        <span class="skill-tag">GitHub Pages</span>
+                        <span class="skill-tag">Blender 3D</span>
+                        <span class="skill-tag">Lua / Roblox</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Kiro IDE</span>
                     </div>
                 </div>
             </div>
@@ -321,7 +319,36 @@
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             <div class="projects-grid">
+                <!-- Featured: CielFinance Tools -->
                 <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>FinTech</span>
+                            <span>Web App</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <h3>CielFinance Tools</h3>
+                        <p>A comprehensive financial tracking and management platform. Features real-time expense tracking, budget management, financial analytics dashboard, and smart insights to help users take control of their finances.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>GitHub Pages</span>
+                            <span>Charts.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ochaosamaaz/financial-tracker" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://ochaosamaaz.github.io/financial-tracker/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trade Agent -->
+                <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
                             <i class="fas fa-robot"></i>
@@ -330,101 +357,82 @@
                     <div class="project-info">
                         <div class="project-tags">
                             <span>AI</span>
-                            <span>Web3</span>
-                            <span>DeFi</span>
-                        </div>
-                        <h3>AI-Powered DeFi Aggregator</h3>
-                        <p>An intelligent DeFi protocol that uses machine learning to optimize yield farming strategies across multiple chains. Features predictive analytics and automated portfolio rebalancing.</p>
-                        <div class="project-tech">
-                            <span>Solidity</span>
+                            <span>Trading</span>
                             <span>Python</span>
-                            <span>React</span>
-                            <span>TensorFlow</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-link"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>NFT</span>
-                            <span>AI</span>
-                            <span>Generative</span>
-                        </div>
-                        <h3>Generative AI NFT Collection</h3>
-                        <p>A dynamic NFT collection where each token's metadata and visual attributes evolve using on-chain AI models. Built with custom ERC-721 extensions.</p>
-                        <div class="project-tech">
-                            <span>Solidity</span>
-                            <span>DALL-E API</span>
-                            <span>IPFS</span>
-                            <span>Next.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span>Security</span>
-                            <span>AI</span>
-                            <span>Auditing</span>
-                        </div>
-                        <h3>Smart Contract Vulnerability Scanner</h3>
-                        <p>An AI-powered tool that automatically detects vulnerabilities in Solidity smart contracts using pattern recognition and symbolic execution.</p>
+                        <h3>AI Trading Agent</h3>
+                        <p>An AI-powered autonomous trading agent that analyzes market data, identifies patterns, and executes trades based on quantum-inspired algorithms and machine learning predictions.</p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>Slither</span>
-                            <span>GPT-4</span>
-                            <span>AST Analysis</span>
+                            <span>AI/ML</span>
+                            <span>Groq API</span>
+                            <span>Quantum Algo</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="https://github.com/ochaosamaaz/trade-agent" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- AI Market News Bot -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-vote-yea"></i>
+                            <i class="fas fa-newspaper"></i>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span>DAO</span>
-                            <span>Governance</span>
-                            <span>Web3</span>
+                            <span>AI</span>
+                            <span>Bot</span>
+                            <span>News</span>
                         </div>
-                        <h3>Decentralized Governance Platform</h3>
-                        <p>A full-featured DAO governance system with quadratic voting, delegation, and AI-summarized proposals for better community decision-making.</p>
+                        <h3>AI Market News Bot</h3>
+                        <p>An intelligent bot that aggregates, summarizes, and delivers real-time market news using AI. Keeps traders and investors informed with concise, AI-curated financial updates.</p>
                         <div class="project-tech">
-                            <span>Solidity</span>
-                            <span>The Graph</span>
-                            <span>React</span>
-                            <span>LangChain</span>
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>API Integration</span>
+                            <span>Automation</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="https://github.com/ochaosamaaz/MIX" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Quantum Theory Validator -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Quantum</span>
+                            <span>Telegram</span>
+                            <span>AI</span>
+                        </div>
+                        <h3>Quantum Theory Validator Bot</h3>
+                        <p>A Telegram bot that validates quantum physics theories and concepts using AI-powered analysis. Educational tool for exploring quantum computing principles interactively.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Telegram API</span>
+                            <span>AI</span>
+                            <span>Physics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ochaosamaaz/Quantum-Theory-Validator-Telegram-Bot" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/ochaosamaaz?tab=repositories" target="_blank" class="btn btn-secondary">
+                    <span>View All Projects on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -439,42 +447,50 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <p class="contact-description">
-                        Interested in collaborating on Web3 or AI projects? 
-                        Whether it's building the next DeFi protocol, training ML models, 
-                        or just geeking out about decentralized systems - let's talk!
+                        Interested in collaborating on AI projects, building financial tools, 
+                        or just want to chat about tech? I'm always open to new opportunities 
+                        and conversations. Let's build something amazing together!
                     </p>
                     <div class="contact-links">
-                        <a href="mailto:ochaos@example.com" class="contact-link">
+                        <a href="mailto:osamabintang8@gmail.com" class="contact-link">
                             <i class="fas fa-envelope"></i>
-                            <span>ochaos@example.com</span>
+                            <span>osamabintang8@gmail.com</span>
                         </a>
-                        <a href="#" class="contact-link">
+                        <a href="https://github.com/ochaosamaaz" target="_blank" class="contact-link">
                             <i class="fab fa-github"></i>
                             <span>github.com/ochaosamaaz</span>
                         </a>
-                        <a href="#" class="contact-link">
-                            <i class="fab fa-twitter"></i>
-                            <span>@ochaos_dev</span>
+                        <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Ossama Bintang</span>
                         </a>
-                        <a href="#" class="contact-link">
-                            <i class="fab fa-discord"></i>
-                            <span>ochaos#0001</span>
+                        <a href="https://www.instagram.com/0xc1el" target="_blank" class="contact-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>@0xc1el</span>
                         </a>
-                        <a href="#" class="contact-link">
+                        <a href="https://t.me/c1elxyz" target="_blank" class="contact-link">
                             <i class="fab fa-telegram"></i>
-                            <span>@ochaos</span>
+                            <span>@c1elxyz</span>
+                        </a>
+                        <a href="https://wa.me/6281809182368" target="_blank" class="contact-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="https://discord.com" target="_blank" class="contact-link">
+                            <i class="fab fa-discord"></i>
+                            <span>cielpro</span>
                         </a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
                         <span>Send Message</span>
@@ -489,8 +505,15 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Ochaos. Built with passion for Web3 & AI.</p>
-                <p class="footer-tagline">Decentralizing the future, one smart contract at a time.</p>
+                <p>&copy; <span id="currentYear"></span> Ossama Bintang. Built with passion for AI & Technology.</p>
+                <p class="footer-tagline">Crafting intelligent solutions, one line of code at a time.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ochaosamaaz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/0xc1el" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/c1elxyz" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/6281809182368" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </footer>
