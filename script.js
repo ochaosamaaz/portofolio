@@ -1,5 +1,5 @@
 /* ==========================================
-   OCHAOS PORTFOLIO - JAVASCRIPT
+   CIEL PORTFOLIO - JAVASCRIPT
    Interactivity & Animations
    ========================================== */
 
@@ -166,26 +166,69 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
+
+        const btn = form.querySelector('button');
+        const originalText = btn.innerHTML;
+        
+        // Show loading state
+        btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+        btn.disabled = true;
 
         // Get form data
         const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            message: formData.get('message')
+        };
 
-        // Animate button
-        const btn = form.querySelector('button');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
-        btn.style.background = 'linear-gradient(135deg, #00ff88, #00d2ff)';
+        // Try sending via mailto fallback (since Formspree needs setup)
+        try {
+            const mailtoLink = `mailto:osamabintang8@gmail.com?subject=Portfolio Contact from ${data.name}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+            window.open(mailtoLink, '_blank');
+            
+            // Show success
+            btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
+            btn.style.background = 'linear-gradient(135deg, #00ff88, #00d2ff)';
+            
+            // Show status message
+            showFormStatus('Your email client has been opened. Send the email to complete!', 'success');
+            
+            form.reset();
+        } catch (error) {
+            btn.innerHTML = '<span>Error! Try Again</span> <i class="fas fa-exclamation-triangle"></i>';
+            btn.style.background = 'linear-gradient(135deg, #ff5f57, #ff3333)';
+            showFormStatus('Something went wrong. Please email me directly at osamabintang8@gmail.com', 'error');
+        }
 
-        // Reset after delay
+        // Reset button after delay
         setTimeout(() => {
             btn.innerHTML = originalText;
             btn.style.background = '';
-            form.reset();
-        }, 3000);
+            btn.disabled = false;
+        }, 4000);
     });
+}
+
+// --- Show Form Status Message ---
+function showFormStatus(message, type) {
+    const form = document.getElementById('contactForm');
+    
+    // Remove existing status
+    const existing = form.querySelector('.form-status');
+    if (existing) existing.remove();
+    
+    const status = document.createElement('div');
+    status.className = `form-status ${type}`;
+    status.textContent = message;
+    form.appendChild(status);
+    
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+        status.remove();
+    }, 5000);
 }
 
 // --- Parallax Effect for Orbs ---
@@ -265,18 +308,26 @@ function initCardTilt() {
     });
 }
 
+// --- Dynamic Footer Year ---
+function initFooterYear() {
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+}
+
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
     // Typing effect
     const typedElement = document.querySelector('.typed-text');
     if (typedElement) {
         new TypeWriter(typedElement, [
-            'Web3 Developer',
-            'AI/ML Enthusiast',
-            'Smart Contract Auditor',
-            'Full-Stack Engineer',
-            'Blockchain Researcher',
-            'Open Source Contributor'
+            'AI Enthusiast',
+            'Full-Stack Developer',
+            'FinTech Builder',
+            'Bot Developer',
+            'Open Source Contributor',
+            'Problem Solver'
         ], 2000);
     }
 
@@ -290,6 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNav();
     initSkillHover();
     initCardTilt();
+    initFooterYear();
 
     // Remove preload class after page loads
     document.body.classList.add('loaded');
