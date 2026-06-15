@@ -1,5 +1,5 @@
 /* ==========================================
-   OCHAOS PORTFOLIO - JAVASCRIPT
+   CIEL PORTFOLIO - JAVASCRIPT
    Interactivity & Animations
    ========================================== */
 
@@ -52,7 +52,6 @@ function initNavbar() {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
 
-    // Scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
@@ -61,7 +60,6 @@ function initNavbar() {
         }
     });
 
-    // Mobile toggle
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
@@ -69,7 +67,6 @@ function initNavbar() {
         });
     }
 
-    // Close mobile menu on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -102,23 +99,9 @@ function animateCounters() {
     });
 }
 
-// --- Scroll Reveal / Intersection Observer ---
+// --- Scroll Reveal ---
 function initScrollReveal() {
     const sections = document.querySelectorAll('.section');
-
-    // Immediately show sections that are already in viewport
-    sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-            section.classList.add('visible');
-        }
-    });
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -127,13 +110,9 @@ function initScrollReveal() {
                 observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, { root: null, rootMargin: '0px', threshold: 0.1 });
 
-    sections.forEach(section => {
-        if (!section.classList.contains('visible')) {
-            observer.observe(section);
-        }
-    });
+    sections.forEach(section => observer.observe(section));
 }
 
 // --- Counter Trigger on Scroll ---
@@ -142,7 +121,6 @@ function initCounterObserver() {
     if (!statsSection) return;
 
     let counted = false;
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !counted) {
@@ -155,17 +133,14 @@ function initCounterObserver() {
     observer.observe(statsSection);
 }
 
-// --- Smooth Scroll for Anchor Links ---
+// --- Smooth Scroll ---
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     });
@@ -179,17 +154,23 @@ function initContactForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Get form data
         const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            message: formData.get('message')
+        };
 
-        // Animate button
         const btn = form.querySelector('button');
         const originalText = btn.innerHTML;
-        btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
+
+        // Open mailto
+        const mailtoLink = `mailto:osamabintang8@gmail.com?subject=Portfolio Contact from ${data.name}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+        window.open(mailtoLink, '_blank');
+
+        btn.innerHTML = '<span>Email Client Opened!</span> <i class="fas fa-check"></i>';
         btn.style.background = 'linear-gradient(135deg, #00ff88, #00d2ff)';
 
-        // Reset after delay
         setTimeout(() => {
             btn.innerHTML = originalText;
             btn.style.background = '';
@@ -241,8 +222,7 @@ function initActiveNav() {
 
 // --- Skill Tag Hover Effect ---
 function initSkillHover() {
-    const tags = document.querySelectorAll('.skill-tag');
-    tags.forEach(tag => {
+    document.querySelectorAll('.skill-tag').forEach(tag => {
         tag.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-2px) scale(1.05)';
         });
@@ -254,9 +234,7 @@ function initSkillHover() {
 
 // --- Project Card Tilt Effect ---
 function initCardTilt() {
-    const cards = document.querySelectorAll('.project-card');
-
-    cards.forEach(card => {
+    document.querySelectorAll('.project-card').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -265,7 +243,6 @@ function initCardTilt() {
             const centerY = rect.height / 2;
             const rotateX = (y - centerY) / 20;
             const rotateY = (centerX - x) / 20;
-
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
         });
 
@@ -276,58 +253,54 @@ function initCardTilt() {
 }
 
 // --- Certificate Modal ---
-function openCertModal(imgSrc, title) {
+function openCertModal(imageSrc, title) {
     const modal = document.getElementById('certModal');
-    const modalImg = document.getElementById('certModalImg');
-    const modalTitle = document.getElementById('certModalTitle');
-
-    modalTitle.textContent = title;
-    modalImg.src = imgSrc;
-    modalImg.alt = title;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    const img = document.getElementById('certModalImg');
+    const titleEl = document.getElementById('certModalTitle');
+    
+    if (modal && img && titleEl) {
+        img.src = imageSrc;
+        titleEl.textContent = title;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 }
 
 function closeCertModal() {
     const modal = document.getElementById('certModal');
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 }
 
-// Close modal with Escape key
+// Close modal on Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeCertModal();
 });
 
-// --- Scroll Progress Bar ---
-function initScrollProgress() {
-    const progressBar = document.getElementById('scrollProgress');
-    if (!progressBar) return;
-
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-        progressBar.style.width = scrollPercent + '%';
-    });
+// --- Dynamic Footer Year ---
+function initFooterYear() {
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
 }
 
 // --- Initialize Everything ---
 document.addEventListener('DOMContentLoaded', () => {
-    // Typing effect
     const typedElement = document.querySelector('.typed-text');
     if (typedElement) {
         new TypeWriter(typedElement, [
-            'Web3 Enthusiast',
-            'AI Explorer',
+            'AI Enthusiast',
             'Admin Planner',
             'Digital Entrepreneur',
-            'Blockchain Researcher',
-            'Kelontong Ciel Owner'
+            'Web3 Explorer',
+            'FinTech Builder',
+            'Problem Solver'
         ], 2000);
     }
 
-    // Initialize all modules
     initNavbar();
     initScrollReveal();
     initCounterObserver();
@@ -337,13 +310,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNav();
     initSkillHover();
     initCardTilt();
-    initScrollProgress();
+    initFooterYear();
 
-    // Remove preload class after page loads
     document.body.classList.add('loaded');
 });
 
-// --- Page Load Animation ---
 window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
+    document.body.style.opacity = '1';
 });

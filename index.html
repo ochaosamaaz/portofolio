@@ -3,35 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>0xC1EL | Web3 & AI Enthusiast</title>
-    <meta name="description" content="Ossama Bintang Raemi Putra (0xC1EL) — Web3 & AI Enthusiast, Admin Planner, Digital Entrepreneur. Building the decentralized future from Indonesia.">
-    <meta name="keywords" content="0xC1EL, Ossama Bintang, Web3, AI, Blockchain, Portfolio, Developer, Indonesia">
+    <meta name="description" content="Ossama Bintang Raemi Putra — Admin Planner, AI Enthusiast & Digital Entrepreneur. Building intelligent solutions from Indonesia.">
+    <meta name="keywords" content="Ossama Bintang, Ciel, 0xC1EL, Admin Planner, AI Enthusiast, Digital Entrepreneur, Indonesia">
     <meta name="author" content="Ossama Bintang Raemi Putra">
     
-    <!-- Open Graph / Social Sharing -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Ossama Bintang | AI Enthusiast & Digital Entrepreneur">
+    <meta property="og:description" content="Admin Planner by profession, AI Enthusiast & Digital Entrepreneur by passion. Building intelligent solutions from Indonesia.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="0xC1EL — Web3 & AI Enthusiast">
-    <meta property="og:description" content="Exploring the intersection of Web3 and AI. Admin Planner by profession, Digital Entrepreneur & Tech Enthusiast by passion.">
-    <meta property="og:image" content="https://ochaosamaaz.github.io/portofolio/assets/og-image.png">
-    <meta property="og:url" content="https://ochaosamaaz.github.io/portofolio/">
+    <meta property="og:url" content="https://ciel.biz.id">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="0xC1EL — Web3 & AI Enthusiast">
-    <meta name="twitter:description" content="Exploring the intersection of Web3 and AI. Building the decentralized future from Indonesia.">
-    <meta name="twitter:image" content="https://ochaosamaaz.github.io/portofolio/assets/og-image.png">
-    
+    <meta name="twitter:title" content="Ossama Bintang | AI Enthusiast & Digital Entrepreneur">
+    <meta name="twitter:description" content="Admin Planner by profession, AI Enthusiast & Digital Entrepreneur by passion.">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⟠</text></svg>">
-    
+
+    <title>Ciel | AI Enthusiast & Digital Entrepreneur</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
-
     <!-- Animated Background -->
     <div class="bg-grid"></div>
     <div class="gradient-orb orb-1"></div>
@@ -42,7 +37,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-bracket">{</span>0xC1EL<span class="logo-bracket">}</span>
+                <span class="logo-bracket">{</span>ciel<span class="logo-bracket">}</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -51,6 +46,7 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="assets/CV-Ossama-Bintang.pdf" download class="nav-cta btn btn-primary btn-sm">Download CV</a>
             <button class="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -74,9 +70,9 @@
                 <span class="typed-text"></span><span class="cursor">|</span>
             </p>
             <p class="hero-description">
-                Exploring the intersection of <span class="highlight">Web3</span> and 
-                <span class="highlight">Artificial Intelligence</span>. Admin Planner by profession,
-                Digital Entrepreneur & Tech Enthusiast by passion. Building the decentralized future from Indonesia.
+                Admin Planner by profession, <span class="highlight">AI Enthusiast</span> & 
+                <span class="highlight">Digital Entrepreneur</span> by passion.
+                Exploring the intersection of technology and business. Building intelligent solutions from Indonesia.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">
@@ -109,21 +105,21 @@
                     <div class="code-dots">
                         <span></span><span></span><span></span>
                     </div>
-                    <span class="code-title">0xC1EL.sol</span>
+                    <span class="code-title">ciel_agent.py</span>
                 </div>
-                <pre class="code-body"><code><span class="code-keyword">pragma</span> solidity ^0.8.19;
+                <pre class="code-body"><code><span class="code-keyword">from</span> langchain <span class="code-keyword">import</span> Agent
+<span class="code-keyword">from</span> groq <span class="code-keyword">import</span> Groq
 
-<span class="code-keyword">contract</span> <span class="code-class">OxC1EL</span> {
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> name = <span class="code-string">"Ossama Bintang"</span>;
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> alias = <span class="code-string">"0xC1EL"</span>;
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> role = <span class="code-string">"Web3 & AI Enthusiast"</span>;
-    <span class="code-keyword">string</span> <span class="code-keyword">public</span> location = <span class="code-string">"Bekasi, Indonesia"</span>;
+<span class="code-keyword">class</span> <span class="code-class">CielAgent</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Ossama Bintang"</span>
+        self.role = <span class="code-string">"AI Enthusiast"</span>
+        self.location = <span class="code-string">"Bekasi, Indonesia"</span>
+        self.stack = [<span class="code-string">"Python"</span>, <span class="code-string">"AI/ML"</span>, <span class="code-string">"Web3"</span>]
     
-    <span class="code-keyword">function</span> <span class="code-func">getPassion</span>() 
-        <span class="code-keyword">public pure returns</span> (<span class="code-keyword">string memory</span>) {
-        <span class="code-keyword">return</span> <span class="code-string">"Building the future"</span>;
-    }
-}</code></pre>
+    <span class="code-keyword">def</span> <span class="code-func">build</span>(self, idea):
+        <span class="code-comment"># Turn ideas into reality</span>
+        <span class="code-keyword">return</span> Agent.create(idea)</code></pre>
             </div>
         </div>
     </section>
@@ -144,19 +140,15 @@
                         and cross-team coordination.
                     </p>
                     <p>
-                        Beyond my professional role, I'm deeply passionate about <strong>Web3 technologies</strong> 
-                        and <strong>Artificial Intelligence</strong>. I run <strong>Kelontong Ciel</strong>, a digital 
-                        game top-up business, and constantly explore blockchain, smart contracts, and AI tools. 
-                        I believe the future is decentralized, and I'm building towards it.
+                        Beyond my professional role, I'm deeply passionate about <strong>Artificial Intelligence</strong> 
+                        and <strong>Web3 technologies</strong>. I run <strong>Kelontong Ciel</strong>, a digital 
+                        game top-up business, and constantly explore AI tools, blockchain, and building intelligent 
+                        automation systems. I believe in leveraging technology to solve real-world problems.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
-                            <i class="fas fa-cube"></i>
-                            <span>Web3 Enthusiast</span>
-                        </div>
-                        <div class="highlight-item">
                             <i class="fas fa-brain"></i>
-                            <span>AI Explorer</span>
+                            <span>AI Enthusiast</span>
                         </div>
                         <div class="highlight-item">
                             <i class="fas fa-chart-line"></i>
@@ -165,6 +157,10 @@
                         <div class="highlight-item">
                             <i class="fas fa-store"></i>
                             <span>Digital Entrepreneur</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Web3 Explorer</span>
                         </div>
                     </div>
                 </div>
@@ -175,13 +171,13 @@
                                 <div class="avatar-ring"></div>
                                 <img src="assets/profile.jpg" alt="Ossama Bintang" class="avatar-img">
                             </div>
-                            <h3>0xC1EL</h3>
-                            <p class="card-role">Web3 & AI Enthusiast</p>
+                            <h3>Ossama Bintang</h3>
+                            <p class="card-role">AI Enthusiast & Digital Entrepreneur</p>
                             <div class="card-socials">
-                                <a href="https://github.com/ochaosamaaz" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/ossama-bintang-raemi-putra-145239237/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                                <a href="https://github.com/ochaosamaaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.instagram.com/0xc1el" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://t.me/c1elxyz" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -342,7 +338,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -379,16 +374,16 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-cube"></i> Web3 & AI Interests</h3>
+                    <h3><i class="fas fa-brain"></i> AI & Web3 Interests</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">AI/ML</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Groq API</span>
+                        <span class="skill-tag">Prompt Engineering</span>
                         <span class="skill-tag">Blockchain</span>
                         <span class="skill-tag">Smart Contracts</span>
                         <span class="skill-tag">DeFi</span>
-                        <span class="skill-tag">NFTs</span>
-                        <span class="skill-tag">AI/ML</span>
-                        <span class="skill-tag">ChatGPT</span>
-                        <span class="skill-tag">Prompt Engineering</span>
-                        <span class="skill-tag">Web3 dApps</span>
                         <span class="skill-tag">Crypto Trading</span>
                         <span class="skill-tag">Bug Bounty</span>
                         <span class="skill-tag">Cybersecurity</span>
@@ -407,6 +402,7 @@
                 <h2 class="section-title">Projects & Ventures</h2>
             </div>
             <div class="projects-grid">
+                <!-- Featured: Kelontong Ciel -->
                 <div class="project-card featured">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -425,38 +421,43 @@
                             <span>Digital Marketing</span>
                             <span>Payment Gateway</span>
                             <span>Customer Service</span>
-                            <span>Database Management</span>
+                            <span>Database</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Visit Store</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- CielFinance Tools -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
-                            <i class="fas fa-cube"></i>
+                            <i class="fas fa-chart-pie"></i>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <span>Web3</span>
-                            <span>Research</span>
-                            <span>Blockchain</span>
+                            <span>FinTech</span>
+                            <span>Web App</span>
+                            <span>JavaScript</span>
                         </div>
-                        <h3>Web3 Research & Exploration</h3>
-                        <p>Active research and participation in the Web3 ecosystem — from DeFi protocols and NFT markets to understanding smart contract architecture and DAO governance models.</p>
+                        <h3>CielFinance Tools</h3>
+                        <p>A financial tracking and management platform with real-time expense tracking, budget management, and analytics dashboard to help users take control of their finances.</p>
                         <div class="project-tech">
-                            <span>Ethereum</span>
-                            <span>DeFi</span>
-                            <span>NFTs</span>
-                            <span>DAOs</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>GitHub Pages</span>
+                            <span>Charts.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/ochaosamaaz" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/ochaosamaaz/financial-tracker" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://ochaosamaaz.github.io/financial-tracker/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- AI Trading Agent -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -466,22 +467,24 @@
                     <div class="project-info">
                         <div class="project-tags">
                             <span>AI</span>
-                            <span>Automation</span>
-                            <span>Tools</span>
+                            <span>Trading</span>
+                            <span>Python</span>
                         </div>
-                        <h3>AI-Powered Workflow Tools</h3>
-                        <p>Leveraging AI tools and prompt engineering to automate daily tasks, enhance productivity in admin planning, and explore machine learning applications for business optimization.</p>
+                        <h3>AI Trading Agent</h3>
+                        <p>An AI-powered autonomous trading agent that analyzes market data, identifies patterns, and provides trading insights using machine learning and quantum-inspired algorithms.</p>
                         <div class="project-tech">
-                            <span>AI Tools</span>
-                            <span>Prompt Engineering</span>
-                            <span>Automation</span>
-                            <span>Azure AI</span>
+                            <span>Python</span>
+                            <span>AI/ML</span>
+                            <span>Groq API</span>
+                            <span>Quantum Algo</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fas fa-flask"></i> In Progress</a>
+                            <a href="https://github.com/ochaosamaaz/trade-agent" target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Mining Operations -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-placeholder">
@@ -495,7 +498,7 @@
                             <span>Planning</span>
                         </div>
                         <h3>Mining Operations Planning System</h3>
-                        <p>Managed and optimized maintenance planning workflows using SAP HANA for 266 heavy equipment haulers at BUMA Adaro mining site. Reduced downtime through efficient weekly backlog scheduling and spare part preparation.</p>
+                        <p>Managed and optimized maintenance planning workflows using SAP HANA for 266 heavy equipment haulers at BUMA Adaro mining site. Reduced downtime through efficient weekly backlog scheduling.</p>
                         <div class="project-tech">
                             <span>SAP HANA</span>
                             <span>Excel</span>
@@ -507,6 +510,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/ochaosamaaz?tab=repositories" target="_blank" class="btn btn-secondary">
+                    <span>View All Projects on GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -521,29 +530,38 @@
             <div class="contact-grid">
                 <div class="contact-info">
                     <p class="contact-description">
-                        Interested in collaborating on Web3 or AI projects? Need help with operations planning?
-                        Or just want to talk about the future of decentralized tech? Let's connect!
+                        Interested in collaborating on AI projects, building tools, 
+                        or just want to chat about tech and business? I'm always open to new opportunities 
+                        and conversations. Let's build something amazing together!
                     </p>
                     <div class="contact-links">
                         <a href="mailto:osamabintang8@gmail.com" class="contact-link">
                             <i class="fas fa-envelope"></i>
                             <span>osamabintang8@gmail.com</span>
                         </a>
-                        <a href="tel:+6285189398309" class="contact-link">
-                            <i class="fas fa-phone"></i>
-                            <span>+62 851 8939 8309</span>
-                        </a>
                         <a href="https://github.com/ochaosamaaz" target="_blank" class="contact-link">
                             <i class="fab fa-github"></i>
                             <span>github.com/ochaosamaaz</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/ossama-bintang-raemi-putra-145239237/" target="_blank" class="contact-link">
+                        <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank" class="contact-link">
                             <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn — Ossama Bintang</span>
+                            <span>Ossama Bintang</span>
+                        </a>
+                        <a href="https://www.instagram.com/0xc1el" target="_blank" class="contact-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>@0xc1el</span>
+                        </a>
+                        <a href="https://t.me/c1elxyz" target="_blank" class="contact-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>@c1elxyz</span>
+                        </a>
+                        <a href="https://wa.me/6281809182368" target="_blank" class="contact-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
                         </a>
                         <a href="#" class="contact-link">
-                            <i class="fas fa-store"></i>
-                            <span>Kelontong Ciel</span>
+                            <i class="fab fa-discord"></i>
+                            <span>cielpro</span>
                         </a>
                         <a href="#" class="contact-link">
                             <i class="fas fa-map-marker-alt"></i>
@@ -553,13 +571,13 @@
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-full">
                         <span>Send Message</span>
@@ -574,8 +592,15 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 0xC1EL. Built with passion for Web3 & AI.</p>
-                <p class="footer-tagline">Decentralizing the future, one block at a time.</p>
+                <p>&copy; <span id="currentYear"></span> Ossama Bintang. Built with passion for AI & Technology.</p>
+                <p class="footer-tagline">Crafting intelligent solutions, one line of code at a time.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/ochaosamaaz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ossama-bintang-raemi-putra-145239237" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/0xc1el" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://t.me/c1elxyz" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/6281809182368" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
     </footer>
